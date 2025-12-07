@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>File Upload</title>
+    <style>
+        .progress-bar {
+            width: 100%;
+            background-color: #f3f3f3;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            height: 30px;
+        }
+        .progress-bar-inner {
+            height: 100%;
+            width: 0;
+            background-color: #4caf50;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload a Large File</h1>
+    <input type="file" id="fileInput" />
+    <div class="progress-bar">
+        <div class="progress-bar-inner" id="progressBar" style="width: 0%;">0%</div>
+    </div>
+    <script th:src="@{/js/upload.js}"></script>
+</body>
+</html>
