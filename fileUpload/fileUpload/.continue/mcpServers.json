@@ -1,0 +1,11 @@
+{
+  "mcpServers": [
+    {
+      "name": "my-mcp-server-53ee8e79",
+      "transport": {
+        "type": "http",
+        "url": "http://localhost:8081/mcp"
+      }
+    }
+  ]
+}
